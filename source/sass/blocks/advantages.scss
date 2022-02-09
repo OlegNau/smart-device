@@ -1,0 +1,128 @@
+.advantages {
+  background-color: transparent;
+}
+
+.advantages__list {
+  padding: 112px 30px 55px;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1260px;
+  justify-content: space-evenly;
+
+  @media (max-width: $desktop-width) {
+   padding: 54px 10px 0;
+  }
+}
+
+.advantages__element {
+  background-color: $white;
+  width: 570px;
+  min-height: 299px;
+  margin: 0 15px 30px;
+  padding: 89px 42px 42px;
+  border: 1px solid $border-gray;
+  border-left: 3px solid $blue;
+
+  @media (max-width: $desktop-width) {
+    width: 44.92%;
+    padding: 69px 25px 25px;
+    min-height: auto;
+  }
+}
+
+.advantages__element h3 {
+  color: $blue;
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  position: relative;
+}
+
+.advantages__element--watch h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 29px;
+  height: 35px;
+  background-image: url("../img/svg/blue-watch.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.advantages__element--big-supplier h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/svg/blue-big-supplier.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.advantages__element--confidentiality h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -54px;
+  left: 0;
+  width: 36px;
+  height: 31px;
+  background-image: url("../img/svg/blue-confidentiality.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.advantages__element--personal-price h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/svg/blue-personal-price.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.advantages__element p {
+  color: $gray;
+}
+
+.advantages__element:hover {
+  background-color: $blue;
+  border: none;
+}
+
+.advantages__element:hover p, .advantages__element:hover h3 {
+  color: $white;
+}
+
+.advantages__element--watch:hover h3::before {
+  background-image: url("../img/svg/white-watch.svg"); 
+}
+
+.advantages__element--big-supplier:hover h3::before {
+  background-image: url("../img/svg/white-big-supplier.svg"); 
+}
+
+.advantages__element--confidentiality:hover h3::before {
+  background-image: url("../img/svg/white-confidentiality.svg"); 
+}
+
+.advantages__element--personal-price:hover h3::before {
+  background-image: url("../img/svg/white-personal-price.svg"); 
+}  

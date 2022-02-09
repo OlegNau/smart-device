@@ -1,0 +1,29 @@
+.social {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 53px;
+  margin-bottom: 53px;
+
+  @media (max-width: $desktop-width) {
+    width: 115px;
+    margin-top: 0;
+  }
+}
+
+.social__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 16px;
+}
+
+.social__item:nth-child(n+3) {
+  @media (max-width: $desktop-width) {
+      margin-right: 0;
+  }
+}

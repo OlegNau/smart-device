@@ -1,0 +1,229 @@
+.form {
+  background-color: $blue;
+  padding: 96px 30px 113px;
+  background-image: url("../img/questions/main-questions-background.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media (max-width: $desktop-width) {
+    padding: 83px 0 103px;
+  }
+}
+
+.form__container {
+  margin: 0 auto;
+  max-width: 1170px;
+  background-color: transparent;
+}
+
+.form__container h2 {
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0 0 7px auto;
+  width: 574px;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto 7px;
+    width: 590px;
+  }
+}
+
+.form__container p { 
+  margin: 0 0 0 auto;
+  width: 574px;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto 0;
+    width: 590px;
+  }
+}
+
+.form__name, .form__phone {
+  background-color: $blue;
+}   
+
+.form__user-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 49px 0 0 auto;
+  width: 574px;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    margin: 49px auto 0;
+    width: 590px;
+  }
+}
+
+.form__user-data::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 511px;
+  height: 288px;
+  background-image: url("../img/questions/airplane.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -64px;
+  left: -600px;
+  z-index: 2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/questions/airplane-2x.png");
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__user-data::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 671px;
+  height: 641px;
+  background-image: url("../img/questions/airplane-background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -290px;
+  left: -780px;
+  background-color: transparent;
+  z-index: 1;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__user-data input {
+  width: 270px;
+  border: none;
+  background-color: $light-white;
+  padding: 14px 17px 14px;
+  color: $white;
+}
+
+.form__user-data input:hover, .form__user-data input:focus {
+  outline: 1px solid $white;
+}
+
+.form__user-data input::placeholder {
+  color: $white;
+}
+
+.form__question {
+  display: block;
+  margin: 40px 0 43px auto;
+  width: 574px;
+  background-color: $blue;
+
+  @media (max-width: $desktop-width) {
+    margin: 40px auto 43px;
+    width: 590px;
+  }
+}
+
+.form__question textarea {
+  background-color: $light-white;
+  padding: 14px 17px 14px;
+  border: none;
+  width: 570px;
+  min-height: 154px;
+  color: $white;
+}
+
+.form__question textarea:hover , .form__question textarea:focus {
+  outline: 1px solid $white;
+}
+
+.form__question textarea::placeholder {
+  color: $white;
+}
+
+.form__button-and-checkbox-container {
+  margin: 0 0 0 auto;
+  width: 574px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+    width: 590px;
+  }
+}
+
+.form__button {
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid $white;
+  color: $white;
+  background-color: $blue;
+  padding: 14px 19px 12px;
+  border-radius: 5px;
+  width: 270px;
+}
+
+.form__button:hover, .form__button:focus  {
+  background-color: $white;
+  color: $blue;
+  outline: none;
+}
+
+.form__button:active {
+  background-color: $white;
+  color: $blue;
+  opacity: 0.7;
+}
+
+.form__checkbox {
+  padding-left: 32px;
+  width: 270px;
+}
+
+.form__checkbox input {
+  border: 1px solid $white;
+}
+
+.form__checkbox label {
+  position: relative;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.9;
+}
+
+.form__checkbox input+label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid $white;
+  background-color: transparent;
+  top: 0;
+  left: -32px;
+  position: absolute;
+  background-image: none;
+}
+
+.form__checkbox input:checked+label::before {
+  background-image: url("../img/svg/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__checkbox input:focus+label:before {
+  outline: thin dotted;
+  outline: 5px auto  $black;
+}

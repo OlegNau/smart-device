@@ -1,0 +1,239 @@
+.header {
+  width: auto;
+  background-color: $dark-blue;
+  min-height: 878px;
+  background-image: url("../img/main-image-vector-background/main-image-vector-background.svg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow-x: hidden;
+
+  @media (max-width: $desktop-width) {
+
+  }
+
+  @media (max-width: $tablet-width) {
+
+  }
+}
+
+.header__top-container {
+  max-width: 1413px;
+  margin: 0 auto;
+  padding: 33px;
+  display: grid;
+  grid-template-columns: 202px 1fr max-content;
+  
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__contacts {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 38px 0 0;
+  flex-wrap: wrap;
+  justify-self: end;
+  justify-content: flex-end;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.header__top-button {
+  display: inline-block;
+  height: min-content;
+  padding: 12px 26px;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  border-radius: 5px;
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__top-button:hover {
+  background-color: $blue;
+  color: $white;
+  border: 1px solid $blue;
+}
+
+.header__top-button:active {
+  opacity: 0.4;
+}
+
+.header__contacts-element {
+  display: block;
+  padding: 0;
+}
+
+.header__contacts-element a {
+  display: flex;
+  margin-left: 88px;
+  margin-top: 14px;
+  color: $white;
+  margin-bottom: 15px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 33px;
+  }
+}
+
+.header__contacts-element p {
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__contacts-element a:hover {
+  opacity: 0.7;
+}
+
+.header__contacts-element a:hover a{
+  color: $blue;
+}
+
+
+.header__mail-icon {
+  margin-right: 20px;
+  margin-top: 4px;
+
+  @media (max-width: $desktop-width) {
+    width: 25px;
+    height: 19px;
+  }
+}
+
+.header__phone-icon {
+  margin-right: 16px;
+
+  @media (max-width: $desktop-width) {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+}
+
+.header__heading-container {
+  display: flex;
+  max-width: 1413px;
+  margin: 0 auto;
+  padding: 173px 33px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.header__main-heading {
+  margin-bottom: 50px;
+  justify-self: start;
+  z-index: 5;
+}
+
+.header__main-heading h1 {
+  color: $white;
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  width: 750px;
+}
+
+
+.header__main-heading p {
+  color: $white;
+  font-size: 22px;
+  line-height: 34px;
+  width: 685px;
+  margin-left: 94px;
+  position: relative;
+}
+
+.header__main-heading p::before {
+  content: "";
+  width: 66px;
+  height: 2px;
+  background-color: $white;
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: -94px
+}
+
+.header__heading-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 55%;
+  width: 671px;
+  height: 641px;
+  background-image: url("../img/main-image-vector-background/main-image-vector-plate-background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+  overflow: auto;
+}
+
+.header__heading-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  width: 705px;
+  height: 515px;
+  transform: translateY(-50%);
+  background-image: url("../img/main-image/main-image-desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 4;
+  overflow: auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-image/main-image-desktop-2x.png");
+  }
+}
+
+.header__heading-button {
+  background-color: $blue;
+  color: $white;
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 17px 28px 14px 28px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 94px;
+}
+
+.header__heading-button:hover {
+  background-color: $white;
+  color: $blue;
+}

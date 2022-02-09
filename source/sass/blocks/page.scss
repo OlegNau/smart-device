@@ -1,0 +1,23 @@
+.page {
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.page__body--hidden {  
+  overflow: hidden;
+  height: 100vh;
+}
+
+.page__advantages-and-about-us {
+  background-color: $white;
+  min-height: 900px;
+  background-image: url("../img/advantages/advantages-background.svg");
+  background-size: cover;
+}

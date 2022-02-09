@@ -1,0 +1,70 @@
+.about-us {
+  padding: 55px 30px 110px;
+  background-color: transparent;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 30px 25px 83px;
+  }
+}
+
+.about-us__elements-container {
+  padding-left: 180px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+ .about-us h2 {
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $gray;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 18px;
+ }
+
+ .about-us h2::before {
+  content: "";
+  position: absolute;
+  width: 317px;
+  height: 330px;
+  background-image: url("../img/about-us/about-us.png");
+  background-repeat: no-repeat;
+  left: -215px;
+  top: 0;
+  display: block;
+  z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-us/about-us-2x.png");
+    }
+ }
+
+ .about-us p {
+  color: $gray;
+}
+
+.about-us__button {
+  font-family: "Roboto Condensed", "Arial Black", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: $white;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  padding: 12px 14px 8px 13px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.about-us__button:hover {
+  background-color: $blue;
+  color: $white;
+}

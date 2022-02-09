@@ -1,0 +1,46 @@
+.legal {
+  border-top: 1px solid $light-gray;
+  grid-area: leg;
+}
+
+.legal__container {
+  max-width: 1477px;
+  margin: 0 auto;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    padding: 30px 25px;
+  }
+}
+
+.legal__rights-protection {
+  flex-grow: 0.44;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.legal__company-date {
+  flex-grow: 1.05;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.legal__confidentiality {
+  flex-grow: 3.01;
+}
+
+.legal__container span, .legal__container a {
+  font-size: 13px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark-gray;
+  opacity: 0.5;
+}

@@ -1,0 +1,42 @@
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 0;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: $black;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

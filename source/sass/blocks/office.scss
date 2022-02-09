@@ -1,0 +1,31 @@
+.office {
+  width: 335px;
+  grid-area: off;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 25px;
+    justify-self: end;
+  }
+}
+
+.office__list {
+  list-style: none;
+  padding: 0;
+}
+
+.office__element {
+  color: $dark-gray;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.office__element p {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+.office__element address {
+  margin: 5px 0;
+  font-style: normal;
+}

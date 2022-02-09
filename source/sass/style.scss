@@ -1,3 +1,17 @@
-h1 {
-  color: red;
-}
+@import "./fonts.scss";
+@import "./normalize.scss";
+@import "./variables.scss";
+@import "./global.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/page.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/office.scss";
+@import "./blocks/legal.scss";
+@import "./blocks/popup.scss";

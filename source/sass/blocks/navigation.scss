@@ -1,0 +1,29 @@
+.navigation {
+  width: 37.78%;
+  padding: 0;
+  grid-area: nav;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 25px;
+  }
+}
+
+.navigation__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.navigation__element {
+  width: 250px;
+}
+
+.navigation__element a{
+  color: $dark-gray;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
