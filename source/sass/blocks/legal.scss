@@ -1,6 +1,6 @@
 .legal {
+  margin-top: 33px;
   border-top: 1px solid $light-gray;
-  grid-area: leg;
 }
 
 .legal__container {
@@ -12,6 +12,11 @@
 
   @media (max-width: $desktop-width) {
     padding: 30px 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 15px;
+    flex-direction: column;
   }
 }
 
@@ -43,4 +48,8 @@
   text-transform: uppercase;
   color: $dark-gray;
   opacity: 0.5;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }

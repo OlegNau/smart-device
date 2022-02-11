@@ -7,6 +7,11 @@
 
   @media (max-width: $desktop-width) {
     padding: 83px 0 103px;
+    background-image: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 33px 0 41px;
   }
 }
 
@@ -29,6 +34,14 @@ font-weight: normal;
   @media (max-width: $desktop-width) {
     margin: 0 auto 7px;
     width: 590px;
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    padding: 0 15px;
+    font-size: 28px;
   }
 }
 
@@ -40,6 +53,11 @@ font-weight: normal;
   @media (max-width: $desktop-width) {
     margin: 0 auto 0;
     width: 590px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    padding: 0 15px;
   }
 }
 
@@ -58,6 +76,12 @@ font-weight: normal;
   @media (max-width: $desktop-width) {
     margin: 49px auto 0;
     width: 590px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    padding: 0 15px;
+    flex-direction: column;
   }
 }
 
@@ -108,6 +132,11 @@ font-weight: normal;
   background-color: $light-white;
   padding: 14px 17px 14px;
   color: $white;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .form__user-data input:hover, .form__user-data input:focus {
@@ -128,6 +157,13 @@ font-weight: normal;
     margin: 40px auto 43px;
     width: 590px;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
 }
 
 .form__question textarea {
@@ -137,6 +173,14 @@ font-weight: normal;
   width: 570px;
   min-height: 154px;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    width: 590px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__question textarea:hover , .form__question textarea:focus {
@@ -158,6 +202,12 @@ font-weight: normal;
     margin: 0 auto;
     width: 590px;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 15px;
+  }
 }
 
 .form__button {
@@ -174,6 +224,12 @@ font-weight: normal;
   padding: 14px 19px 12px;
   border-radius: 5px;
   width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
 }
 
 .form__button:hover, .form__button:focus  {
@@ -191,6 +247,10 @@ font-weight: normal;
 .form__checkbox {
   padding-left: 32px;
   width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__checkbox input {

@@ -3,7 +3,11 @@
   background-color: transparent;
 
   @media (max-width: $desktop-width) {
-    padding-top: 30px 25px 83px;
+    padding: 30px 25px 83px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 15px 65px;
   }
 }
 
@@ -11,6 +15,10 @@
   padding-left: 180px;
   max-width: 1170px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
  .about-us h2 {
@@ -40,6 +48,10 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/about-us/about-us-2x.png");
     }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
  }
 
  .about-us p {
@@ -58,7 +70,7 @@
   color: $blue;
   border: 1px solid $blue;
   border-radius: 5px;
-  padding: 12px 14px 8px 13px;
+  padding: 12px 50px 8px 50px;
   margin-top: 30px;
   position: relative;
   z-index: 3;

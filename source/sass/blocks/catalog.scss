@@ -3,7 +3,11 @@
   background-color: $dark-blue;
 
   @media (max-width: $desktop-width) {
-    padding: 53px 25px 32px;
+    padding: 53px 10px 32px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 0 32px;
   }
 }
 
@@ -20,7 +24,13 @@
     font-size: 32px;
     line-height: 140.62%;
     width: 615px;
-    margin-left: 0;
+    margin: 0 15px 46px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    margin: 0 15px 37px;
+    width: 100%;
   }
 }
 
@@ -45,6 +55,11 @@
     width: 720px;
     height: 256px;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    height: 256px;
+  }
 }
 
 .catalog__item span {
@@ -54,6 +69,12 @@
   color: $white;
   font-size: 20px;
   line-height: 30px;
+
+  @media (max-width: $desktop-width) {
+    width: 160px;
+    display: inline-block;
+    vertical-align: auto;
+  }
 }
 
 .catalog__image {

@@ -1,11 +1,33 @@
 .navigation {
-  width: 37.78%;
-  padding: 0;
-  grid-area: nav;
+  width: 35.78%;
+  padding: 0 0 0 auto;
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   @media (max-width: $desktop-width) {
     padding-left: 25px;
+    width: 37.78%;
+    margin: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.navigation h3 {
+  width: 100%;
+}
+
+.navigation__list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .navigation__list {
@@ -14,11 +36,23 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
+  width: 250px;
+  margin-bottom: 0;
+  margin-top: 0;
 
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .navigation__element {
-  width: 250px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.navigation__element:last-child a {
+  margin-bottom: 0;
 }
 
 .navigation__element a{

@@ -8,6 +8,11 @@
   @media (max-width: $desktop-width) {
     width: 115px;
     margin-top: 0;
+    margin-left: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 

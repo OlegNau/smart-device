@@ -51,7 +51,7 @@
         <svg  width="52" height="52"  fill="#0AD9C6"  opacity="1" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#logo"></use>
         </svg>
-        <div class="logo__text-containe logo__text-container--header-tabletr">
+        <div class="logo__text-container logo__text-container--header-tablet">
           <span class="logo__main-text">Smart Device</span>
           <span class="logo__text">Умные технологии</span>
         </div>
@@ -80,7 +80,7 @@
       <div class="header__main-heading">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="header__heading-button">Получить бесплатную консультацию</button>
+        <button class="header__heading-button"><span>Получить бесплатную консультацию</span></button>
       </div>
     </div>
   </header>
@@ -129,7 +129,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog/production-tablet.webp 1x, img/catalog/production-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog/production-desktop.webp 1x, img/catalog/production-desktop-2x.webp 2x">
                 <!-- 1х: width: 370px height: 640px; 2x: width: 740px height: 1280px -->
-              <img data-src="img/catalog/production-desktop.jpg" width="370" height="640" class="catalog__image" alt="Процесс производства плат">
+              <img src="img/catalog/production-desktop.jpg" width="370" height="640" class="catalog__image" alt="Процесс производства плат">
             </picture>
           </a>
         </li>
@@ -141,7 +141,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog/assembly-tablet.webp 1x, img/catalog/assembly-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog/assembly-desktop.webp 1x, img/catalog/assembly-desktop-2x.webp 2x">
                 <!-- 1х: width: 370px height: 640px; 2x: width: 740px height: 1280px -->
-              <img data-src="img/catalog/assembly-desktop.jpg" width="370" height="640" class="catalog__image" alt="Процесс монтажа печатных плат">
+              <img src="img/catalog/assembly-desktop.jpg" width="370" height="640" class="catalog__image" alt="Процесс монтажа печатных плат">
             </picture>
           </a>
         </li>
@@ -153,7 +153,7 @@
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog/accessories-tablet.webp 1x, img/catalog/accessories-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog/accessories-desktop.webp 1x, img/catalog/accessories-desktop-2x.webp 2x">
                 <!-- 1х: width: 370px height: 640px; 2x: width: 740px height: 1280px -->
-              <img data-src="img/catalog/accessories-desktop.jpg" width="370" height="640" class="catalog__image" alt="Изображение комплектующих дл светотехники">
+              <img src="img/catalog/accessories-desktop.jpg" width="370" height="640" class="catalog__image" alt="Изображение комплектующих дл светотехники">
             </picture>
           </a>
         </li>
@@ -189,7 +189,7 @@
   </main>
   <footer class="footer">
     <div class="footer__content-container">
-      <h2 class="visually-hidden">Навигация и контактна информация</h2>
+      <h2 class="visually-hidden">Навигация и контактная информация</h2>
       <div class="footer__top-block">
         <div class="logo">
           <svg  width="52" height="52"  fill="#0AD9C6"  opacity="1" xmlns="http://www.w3.org/2000/svg">
@@ -232,29 +232,33 @@
       </div>
       <nav class="navigation">
         <h3 class="footer__heading">Разделы сайта</h3>
-        <ul class="navigation__list">
+        <div class="navigation__list-container">
+          <ul class="navigation__list">
           <li class="navigation__element">
             <a href="#">О компании</a>
-          </li>
-          <li class="navigation__element">
-            <a href="#">Комплектующие</a>
           </li>
           <li class="navigation__element">
             <a href="#">Продукты</a>
           </li>
           <li class="navigation__element">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="navigation__element">
             <a href="#">Производство печатных плат</a>
-          </li>
-          <li class="navigation__element">
-            <a href="#">Контакты</a>
           </li>
           <li class="navigation__element">
             <a href="#">Монтаж печатных плат</a>
           </li>
         </ul>
+        <ul class="navigation__list">
+          <li class="navigation__element">
+            <a href="#">Комплектующие</a>
+          </li>
+          <li class="navigation__element">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="navigation__element">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        </div>
       </nav>
       <div class="office">
         <h3 class="footer__heading">Наш офис</h3>

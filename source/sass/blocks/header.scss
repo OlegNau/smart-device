@@ -10,7 +10,7 @@
   overflow-x: hidden;
 
   @media (max-width: $desktop-width) {
-
+    min-height: auto;
   }
 
   @media (max-width: $tablet-width) {
@@ -27,10 +27,22 @@
   
   @media (max-width: $desktop-width) {
     margin: 0;
+    min-width: none;
     width: 100%;
-    padding: 20px 25px;
+    padding: 33px 25px;
     display: flex;
     justify-content: space-between;
+    
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 15px;
+  }
+}
+
+.header__top-container .logo {
+  @media (max-width: $tablet-width) {
+   width: 38px;
   }
 }
 
@@ -122,6 +134,10 @@
     width: 25px;
     height: 19px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .header__phone-icon {
@@ -141,12 +157,32 @@
   padding: 173px 33px 0;
   flex-wrap: wrap;
   position: relative;
+
+  @media (max-width: $desktop-width) {
+    margin: 103px 0px 163px;
+    padding: 30px 25px 0;
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 15px 0;
+    margin: 231px 0 70px;
+  }
 }
 
 .header__main-heading {
   margin-bottom: 50px;
   justify-self: start;
   z-index: 5;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 63px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 
 .header__main-heading h1 {
@@ -159,6 +195,18 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   width: 750px;
+
+  @media (max-width: $desktop-width) {
+    width: 430px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 
@@ -169,6 +217,17 @@
   width: 685px;
   margin-left: 94px;
   position: relative;
+
+  @media (max-width: $desktop-width) {
+    width: 356px;
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 245px;
+    margin-left: 58px;
+  }
 }
 
 .header__main-heading p::before {
@@ -179,7 +238,12 @@
   position: absolute;
   display: block;
   top: 15px;
-  left: -94px
+  left: -94px;
+
+  @media (max-width: $desktop-width) {
+    width: 33px;
+    left: -58px;
+  }
 }
 
 .header__heading-container::before {
@@ -212,8 +276,24 @@
   z-index: 4;
   overflow: auto;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-image/main-image-desktop-2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-image/main-image-desktop-2x.png");
+    }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/main-image/main-image-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-image/main-image-tablet-2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/main-image/main-image-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-image/main-image-mobile-2x.png");
+    }
   }
 }
 
@@ -231,6 +311,35 @@
   border: none;
   border-radius: 5px;
   margin: 0 94px;
+  position: relative;
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    max-width: 379px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 287px;
+    margin: 0;
+    height: 55px;
+  }
+}
+
+.header__heading-button span {
+  @media (max-width: $tablet-width) {
+  display: none;
+  }
+}
+
+.header__heading-button::before {
+  @media (max-width: $tablet-width) {
+  content: "Бесплатная консультация";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 285px;
+  }
 }
 
 .header__heading-button:hover {

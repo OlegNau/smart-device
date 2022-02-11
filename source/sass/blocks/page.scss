@@ -18,6 +18,11 @@
 .page__advantages-and-about-us {
   background-color: $white;
   min-height: 900px;
-  background-image: url("../img/advantages/advantages-background.svg");
+  background-image: url("../img/advantages/advantages-background-desktop.svg");
   background-size: cover;
+
+  @media (max-width: $desktop-width) {
+    min-height: auto;
+    background-image: url("../img/advantages/advantages-background-tablet.svg");
+  }
 }
