@@ -10,17 +10,6 @@
 }
 
 @font-face {
-  font-family: "PT Mono";
-  src:  local("PT Mono Bold"),
-    local("PTMono-Bold"),
-    url("../fonts/ptmonobold.woff2") format("woff2"),
-    url("../fonts/ptmonobold.woff") format("woff");
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Roboto Condensed";
   src:  local("Roboto Condensed"),
     local("RobotoCondensed-Regular"),

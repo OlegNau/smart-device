@@ -1,6 +1,6 @@
 .form {
   background-color: $blue;
-  padding: 96px 30px 113px;
+  padding: 90px 30px 113px;
   background-image: url("../img/questions/main-questions-background.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -27,7 +27,7 @@
 font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  margin: 0 0 7px auto;
+  margin: 0 0 10px auto;
   width: 574px;
   color: $white;
 
@@ -95,7 +95,7 @@ font-weight: normal;
   background-position: center;
   background-repeat: no-repeat;
   top: -64px;
-  left: -600px;
+  left: -625px;
   z-index: 2;
 
     @media (min-resolution: 2dppx) {
@@ -116,8 +116,8 @@ font-weight: normal;
   background-image: url("../img/questions/airplane-background.svg");
   background-position: center;
   background-repeat: no-repeat;
-  top: -290px;
-  left: -780px;
+  top: -285px;
+  left: -800px;
   background-color: transparent;
   z-index: 1;
 

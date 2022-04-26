@@ -19,9 +19,9 @@
 }
 
 .header__top-container {
-  max-width: 1413px;
+  max-width: 1411px;
   margin: 0 auto;
-  padding: 33px;
+  padding: 33px 0 33px 0;
   display: grid;
   grid-template-columns: 202px 1fr max-content;
   
@@ -50,7 +50,7 @@
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0 38px 0 0;
+  margin: 0 52px 0 0;
   flex-wrap: wrap;
   justify-self: end;
   justify-content: flex-end;
@@ -63,7 +63,8 @@
 .header__top-button {
   display: inline-block;
   height: min-content;
-  padding: 12px 26px;
+  padding: 13px 26px;
+  margin-top: 5px;
   background-color: transparent;
   border: 1px solid $white;
   color: $white;
@@ -154,7 +155,7 @@
   display: flex;
   max-width: 1413px;
   margin: 0 auto;
-  padding: 173px 33px 0;
+  padding: 142px 0 0;
   flex-wrap: wrap;
   position: relative;
 
@@ -195,6 +196,7 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   width: 750px;
+  margin-bottom: 30px;
 
   @media (max-width: $desktop-width) {
     width: 430px;
@@ -217,6 +219,7 @@
   width: 685px;
   margin-left: 94px;
   position: relative;
+  margin-bottom: 42px;
 
   @media (max-width: $desktop-width) {
     width: 356px;
@@ -265,7 +268,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 55%;
   width: 705px;
   height: 515px;
@@ -307,7 +310,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 17px 28px 14px 28px;
+  padding: 18px 45px 18px 45px;
   border: none;
   border-radius: 5px;
   margin: 0 94px;

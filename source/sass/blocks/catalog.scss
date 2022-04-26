@@ -1,5 +1,5 @@
 .catalog {
-  padding: 93px 30px 127px;
+  padding: 93px 30px 83px;
   background-color: $dark-blue;
 
   @media (max-width: $desktop-width) {
@@ -18,7 +18,7 @@
   font-size: 36px;
   line-height: 51px;
   max-width: 1170px;
-  margin: 0 auto 47px;
+  margin: 0 auto 50px;
 
   @media (max-width: $desktop-width) {
     font-size: 32px;
@@ -69,6 +69,9 @@
   color: $white;
   font-size: 20px;
   line-height: 30px;
+  width: 200px;
+  display: inline-block;
+  padding-right: 30px;
 
   @media (max-width: $desktop-width) {
     width: 160px;

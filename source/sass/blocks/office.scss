@@ -14,11 +14,6 @@
   }
 }
 
-.office__list {
-  list-style: none;
-  padding: 0;
-}
-
 .office__element {
   color: $dark-gray;
   font-size: 15px;
@@ -34,4 +29,10 @@
 .office__element address {
   margin: 5px 0;
   font-style: normal;
+}
+
+.office__header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }

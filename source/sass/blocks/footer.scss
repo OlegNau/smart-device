@@ -25,6 +25,8 @@ footer {
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-bottom: 28px;
+  margin-top: 28px;
 }
 
 .footer__company-dates {
@@ -61,7 +63,7 @@ footer {
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
   }
 }
 
@@ -69,5 +71,53 @@ footer {
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     width: 215px;
+  }
+}
+
+.footer__button {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-top: 18px;
+    margin-bottom: 18px; 
+    background-image: url("../img/svg/footer-button-close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.footer__button--close {
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/svg/footer-button.svg");
+  }
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list--navigation {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.footer__list--hide {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
